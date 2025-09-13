@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    background: #edb7d9;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(178, 185, 185);
+    border: 2px solid #434b22;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .cell.x {
+    color: rgb(7, 20, 69);
+  }
+  
+  .cell.o {
+    color: rgb(53, 5, 5);
+  }
+  
+  .message {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .message.show {
+    display: block;
+    text-align: center;
+  }
+  
+  #button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(2, 2, 39);
+    background-color: #d0e091;
+  }
+  
